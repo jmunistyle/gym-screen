@@ -25,17 +25,26 @@ html,body{margin:0;height:100%;color:#ece8d9;font-family:Oswald,'Arial Narrow',A
 .lift .it .n{font-size:2.2vw}
 .foot{text-align:center;font-size:1.7vw;color:#a8a890;font-weight:500;letter-spacing:.2vw;padding:.2vw 0 .9vw}
 .foot i{font-style:normal;color:#8fb339}
+.stack{flex:1;display:flex;flex-direction:column;gap:1.2vw;min-height:0}
+.stack .col{flex:none}
+.stack .warm .list{justify-content:center;padding-top:.4vw}
+.stack .big{flex:1}
+.wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+*{box-sizing:border-box}
 </style></head><body>
 <div class="top"><img src="logo.png" alt="Muni Gym"><h1>THURSDAY · OCT 8</h1><div class="t">START 7:00<br>DONE 8:00</div></div>
 <div class="wrap">
- <div class="col lift"><h2>WARM UP + LIFT <small>7:00–7:35</small></h2>
+ <div class="stack">
+ <div class="col warm"><h2>WARM UP <small>7:00–7:10</small></h2>
+  <div class="list"><div class="it"><span class="n">Stretch &amp; Warm Up<span class="d">10 min · mobility + activation</span></span></div></div></div>
+ <div class="col lift big"><h2>LIFT <small>7:10–7:35</small></h2>
   <div class="list">
-   <div class="it"><span class="k">7:00</span><span class="n">Stretch &amp; Warm Up<span class="d">10 min</span></span></div>
    <div class="it"><span class="k">7:10</span><span class="n">Pull-ups<span class="d">5 × 3–4 · 60s rest</span></span></div>
    <div class="it"><span class="k">7:15</span><span class="n">Single-arm DB Row<span class="d">4 × 8–10 / arm · 60s rest</span></span></div>
    <div class="it"><span class="k">7:24</span><span class="n">Dips + Pushdowns<span class="d">Superset · 3 × 6–8 / 3 × 12</span></span></div>
    <div class="it"><span class="k">7:31</span><span class="n">Hanging Knee Raises<span class="d">3 × 10</span></span></div>
   </div></div>
+ </div>
  <div class="col"><h2>CIRCUIT 1 <small>7:35</small></h2><div class="sub">BUY-IN · 2 MIN ROW</div><div class="rds">3 ROUNDS</div>
   <div class="list">
    <div class="it"><span class="k">5</span><span class="n">Burpee to OH Press</span></div>

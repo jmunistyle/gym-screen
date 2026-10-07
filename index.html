@@ -6,42 +6,48 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
 <style>
 html,body{margin:0;height:100%;color:#ece8d9;font-family:Oswald,'Arial Narrow',Arial,sans-serif;overflow:hidden;display:flex;flex-direction:column;background:#080906 url(bg.jpg) center/cover no-repeat}
-.top{display:flex;align-items:center;justify-content:space-between;padding:.7vw 2.2vw;background:linear-gradient(180deg,rgba(0,0,0,.85),rgba(0,0,0,.55));border-bottom:.25vw solid #6b8e23;box-shadow:0 .3vw 1.5vw rgba(107,142,35,.45);white-space:nowrap}
+.top{display:flex;align-items:center;justify-content:space-between;padding:.6vw 2.2vw;background:linear-gradient(180deg,rgba(0,0,0,.85),rgba(0,0,0,.55));border-bottom:.25vw solid #6b8e23;box-shadow:0 .3vw 1.5vw rgba(107,142,35,.45);white-space:nowrap}
 .top img{height:4.4vw;display:block}
-.top h1{margin:0;font-size:2.85vw;font-weight:700;letter-spacing:.15vw;text-shadow:0 0 1vw rgba(154,205,50,.35)}
-.top .t{font-size:1.58vw;font-weight:500;color:#a8c95a;text-align:right;line-height:1.15}
-.lift{margin:.6vw 2.2vw 0;background:rgba(10,12,8,.82);border:.15vw solid rgba(107,142,35,.6);border-radius:.8vw;padding:.4vw 1.4vw;font-size:1.5vw;line-height:1.2;font-weight:500}
-.lift b{color:#a8c95a;font-weight:700}
-.wrap{flex:1;min-height:0;display:flex;gap:1.6vw;padding:.9vw 2.2vw .5vw}
-.col{flex:1;display:flex;flex-direction:column;background:rgba(6,8,4,.84);border:.22vw solid #6b8e23;border-radius:1vw;padding:.6vw 1.4vw;box-shadow:0 0 1.6vw rgba(107,142,35,.4),inset 0 0 1.2vw rgba(107,142,35,.15)}
-.col h2{margin:0;font-size:2.62vw;font-weight:700;color:#a8c95a;letter-spacing:.12vw}
-.buy{font-size:1.95vw;font-weight:500;background:rgba(107,142,35,.18);border-left:.55vw solid #8fb339;padding:.25vw .9vw;margin:.3vw 0 .4vw}
-.rds{font-size:1.72vw;color:#9a9a8a;font-weight:500;letter-spacing:.1vw}
-.ex{flex:1;font-size:3.45vw;font-weight:700;margin:0;line-height:1.05;display:flex;align-items:center}
-.ex span{color:#a8c95a;flex:0 0 5.7vw}
-.rest{padding:.4vw 0 1vw;text-align:center;font-size:1.8vw;color:#a8a890;font-weight:500;letter-spacing:.2vw}
-.rest i{font-style:normal;color:#8fb339}
-.liftbox{margin:.6vw 2.2vw 0;display:flex;gap:.8vw;align-items:stretch}
-.lh{background:#6b8e23;color:#0a0b07;font-weight:700;font-size:1.9vw;border-radius:.8vw;padding:.4vw 1.2vw;display:flex;flex-direction:column;justify-content:center;line-height:1.1;letter-spacing:.1vw}
-.lh span{font-size:1.3vw;font-weight:500}
-.lt{flex:1;background:rgba(10,12,8,.85);border:.15vw solid rgba(107,142,35,.6);border-radius:.8vw;padding:.35vw 1vw;line-height:1.15}
-.lt b{color:#a8c95a;font-size:1.35vw;font-weight:700}
-.lt .n{font-size:1.9vw;font-weight:700}
-.lt .d{font-size:1.4vw;color:#c9c6b4;font-weight:500}
+.top h1{margin:0;font-size:3vw;font-weight:700;letter-spacing:.15vw;text-shadow:0 0 1vw rgba(154,205,50,.35)}
+.top .t{font-size:1.6vw;font-weight:500;color:#a8c95a;text-align:right;line-height:1.2}
+.wrap{flex:1;min-height:0;display:flex;gap:1.4vw;padding:1.2vw 2.2vw .6vw}
+.col{flex:1;display:flex;flex-direction:column;background:rgba(6,8,4,.84);border:.2vw solid #6b8e23;border-radius:1vw;padding:.9vw 1.4vw;box-shadow:0 0 1.4vw rgba(107,142,35,.35),inset 0 0 1vw rgba(107,142,35,.12)}
+.col h2{margin:0;font-size:2.5vw;font-weight:700;color:#a8c95a;letter-spacing:.12vw;display:flex;justify-content:space-between;align-items:baseline}
+.col h2 small{font-size:1.6vw;color:#ece8d9;font-weight:500}
+.sub{font-size:1.7vw;font-weight:500;background:rgba(107,142,35,.18);border-left:.45vw solid #8fb339;padding:.25vw .8vw;margin:.5vw 0 .2vw}
+.rds{font-size:1.5vw;color:#9a9a8a;font-weight:500;letter-spacing:.1vw;margin-top:.3vw}
+.list{flex:1;display:flex;flex-direction:column;justify-content:space-evenly}
+.it{display:flex;align-items:baseline;line-height:1.1}
+.it .k{color:#a8c95a;font-weight:700;flex:0 0 4.6vw;font-size:2.4vw}
+.it .n{font-size:2.4vw;font-weight:700}
+.it .d{display:block;font-size:1.5vw;color:#c9c6b4;font-weight:500;margin-top:.15vw}
+.lift .it .k{font-size:1.7vw;flex-basis:4.6vw}
+.lift .it .n{font-size:2.2vw}
+.foot{text-align:center;font-size:1.7vw;color:#a8a890;font-weight:500;letter-spacing:.2vw;padding:.2vw 0 .9vw}
+.foot i{font-style:normal;color:#8fb339}
 </style></head><body>
-<div class="top"><img src="logo.png" alt="Muni Gym"><h1>THURSDAY · OCT 8</h1><div class="t">7:38 CIRCUIT 1 · 7:52 CIRCUIT 2<br>DONE 8:04</div></div>
-<div class="lift"><b>7:00</b>&nbsp; Stretch &amp; Warm Up</div>
-<div class="liftbox"><div class="lh">LIFT <span>7:10 – 7:35</span></div>
- <div class="lt"><b>7:10</b><div class="n">Pull-ups</div><div class="d">5 × 3–4 · 60s rest</div></div>
- <div class="lt"><b>7:15</b><div class="n">Single-arm DB Row</div><div class="d">4 × 8–10 / arm · 60s rest</div></div>
- <div class="lt"><b>7:24</b><div class="n">Dips + Pushdowns</div><div class="d">Superset 3 × 6–8 / 3 × 12</div></div>
- <div class="lt"><b>7:31</b><div class="n">Hanging Knee Raises</div><div class="d">3 × 10</div></div>
-</div>
+<div class="top"><img src="logo.png" alt="Muni Gym"><h1>THURSDAY · OCT 8</h1><div class="t">START 7:00<br>DONE 8:04</div></div>
 <div class="wrap">
- <div class="col"><h2>CIRCUIT 1</h2><div class="buy">BUY-IN · 2 MIN ROW</div><div class="rds">3 ROUNDS</div>
-  <div class="ex"><span>5</span>Burpee to OH Press</div><div class="ex"><span>10</span>KB Swings</div><div class="ex"><span>2</span>Sled Pulls</div></div>
- <div class="col"><h2>CIRCUIT 2</h2><div class="buy">BUY-IN · 2 MIN AIRDYNE</div><div class="rds">3 ROUNDS</div>
-  <div class="ex"><span>10</span>Push-ups</div><div class="ex"><span>10</span>Slam Balls</div><div class="ex"><span>10</span>Stability Ball Crunches</div></div>
+ <div class="col lift"><h2>WARM UP + LIFT <small>7:00</small></h2>
+  <div class="list">
+   <div class="it"><span class="k">7:00</span><span class="n">Stretch &amp; Warm Up<span class="d">10 min</span></span></div>
+   <div class="it"><span class="k">7:10</span><span class="n">Pull-ups<span class="d">5 × 3–4 · 60s rest</span></span></div>
+   <div class="it"><span class="k">7:15</span><span class="n">Single-arm DB Row<span class="d">4 × 8–10 / arm · 60s rest</span></span></div>
+   <div class="it"><span class="k">7:24</span><span class="n">Dips + Pushdowns<span class="d">Superset · 3 × 6–8 / 3 × 12</span></span></div>
+   <div class="it"><span class="k">7:31</span><span class="n">Hanging Knee Raises<span class="d">3 × 10</span></span></div>
+  </div></div>
+ <div class="col"><h2>CIRCUIT 1 <small>7:38</small></h2><div class="sub">BUY-IN · 2 MIN ROW</div><div class="rds">3 ROUNDS</div>
+  <div class="list">
+   <div class="it"><span class="k">5</span><span class="n">Burpee to OH Press</span></div>
+   <div class="it"><span class="k">10</span><span class="n">KB Swings</span></div>
+   <div class="it"><span class="k">2</span><span class="n">Sled Pulls</span></div>
+  </div></div>
+ <div class="col"><h2>CIRCUIT 2 <small>7:52</small></h2><div class="sub">BUY-IN · 2 MIN AIRDYNE</div><div class="rds">3 ROUNDS</div>
+  <div class="list">
+   <div class="it"><span class="k">10</span><span class="n">Push-ups</span></div>
+   <div class="it"><span class="k">10</span><span class="n">Slam Balls</span></div>
+   <div class="it"><span class="k">10</span><span class="n">Stability Ball Crunches</span></div>
+  </div></div>
 </div>
-<div class="rest">REST 2 MIN BETWEEN CIRCUITS <i>·</i> TRAIN HARD <i>·</i> FORM BAYOUS</div>
+<div class="foot">REST 2 MIN BETWEEN CIRCUITS <i>·</i> TRAIN HARD <i>·</i> FORM BAYOUS</div>
 </body></html>
